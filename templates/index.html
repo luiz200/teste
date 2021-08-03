@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>G1</h1>
+    <br>
+    <div>
+        {% for index1 in index1s %}
+        <div>
+            <h1>{{ index1.feed-post-body-title gui-color-primary gui-color-hover }}</h1>
+            <br>
+            <h2>{{ index1.feed-post-body-resumo }}</h2>
+            <br>
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+    <br>
+    <h1>GE</h1>
+    <br>
+    <div>
+        {% for index2 in index2s %}
+        <h1>{{ index2.feed-post-link gui-color-primary gui-color-hover }}</h1>
+        <br>
+        <h2>{{ index2.feed-post-body-resumo }}</h2>
+        <br>
+        {% endfor %}
+    </div>
+</body>
+</html>
